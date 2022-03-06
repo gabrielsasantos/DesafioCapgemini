@@ -7,3 +7,8 @@ Foi pedido na questão 1 uma lista de números com elementos ímpares e um algor
 Questão 2 
 
 Na segunda questão, foi pedido um vetor com valor N inteiro e um número com valor também inteiro X, para ser usado como a diferença no vetor. Comecei o meu código pedindo para colocar o tamanho do vetor e depois comecei um loop para que acrescentassem o número de elementos compatíveis com o tamanho do vetor. Logo após fiz um outro loop para que todos os elementos do vetor rodassem entre si, subtraindo um com os outros e salvando a diferença pedida no X. Depois eu imprimi quantas vezes aconteceu a diferença do X no loop.
+
+
+Questão 3
+
+Na terceira questão, foi pedido um texto encripitado, removendo seus espaços, pegando sua raiz por números de letras, transformando o texto no número de colunas e linhas com base no resultado da raiz.Depois disso pegar a primeira, segunda, terceira, quarta ou quantas houver e formar palavras. (Exemplo: "tenha um bom dia" que se transforma em tenh aumb omdi a 1-t 1-a 1-o 1-a= taoa / 2-e 2-u 2-m = eum / 3-n 3-m 3-d= nmd / 4-h 4-b 4-i= hbi). No meu programa coloquei a frase que queria encripitar, logo após peguei a raiz quadrada da quantidade de caracteres e adicionei os caracteres do texto em uma lista para facilitar a manipulação. Fui mapear a matriz e removi o primeiro da lista, iterei a matriz de forma inversa, colunas primeiro e depois adicionei o caractere de cada coluna e depois retornei o texto encripitado. 
