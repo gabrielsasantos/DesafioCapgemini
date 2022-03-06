@@ -7,15 +7,17 @@ import java.util.Scanner;
 public class questao3 {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		 Scanner sc = new Scanner(System.in);
 
-		System.out.println("Digita a frase escolhida? ");
-		String frase = sc.nextLine();
-		System.out.println(encrypt(frase));
-	}
-
+	        System.out.println("Digita a frase escolhida? ");
+	        String frase = sc.nextLine();
+	        System.out.println(encrypt(frase));
+	  }
+	
+	    
 	public static String encrypt(String text) {
 		text = text.replace(" ", "");
+
 
 		int dimension = (int) Math.ceil(Math.sqrt(text.length()));
 
@@ -26,6 +28,7 @@ public class questao3 {
 			characters.add(text.charAt(i));
 		}
 
+		
 		try {
 			for (int i = 0; i < grid.length; i++) {
 				for (int j = 0; j < grid[i].length; j++) {
@@ -33,6 +36,7 @@ public class questao3 {
 						break;
 					}
 
+					
 					grid[i][j] = characters.remove(0);
 				}
 			}
@@ -41,10 +45,10 @@ public class questao3 {
 
 		String encryptedText = "";
 		try {
-
+			
 			for (int i = 0; i < grid[i].length; i++) {
 				for (int j = 0; j < grid.length; j++) {
-
+					
 					encryptedText += grid[j][i];
 				}
 				encryptedText += " ";
@@ -52,7 +56,11 @@ public class questao3 {
 		} catch (Exception e) {
 		}
 
+		System.out.println("Sua frase encripitada é: ");
 		return encryptedText;
+	
 
-	}
+	
+
+}
 }
